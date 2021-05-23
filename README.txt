@@ -17,7 +17,11 @@ In all these files, the __main__ driver function is only three lines, it is easy
 Here you can specify the range of C, Sigma values and number of CV splits before running.
 
 ASSUMPTIONS AND NOTES:
---------------
+---------------------------
+- The file 'hw_data_2020.csv' is present in the same directory as these files.
+
+- The extracted 'mfeat' directory is also present in the same directory.
+
 - Since 'SVM with Linear Kernel' in problem 3 is the same as SVM with no kernel in problem 2,
   I only run it once in dual_SVM.py. In kernel_SVM.py it only runs the RBF kernel and shows results.
 

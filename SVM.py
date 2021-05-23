@@ -66,12 +66,6 @@ class kernelSVM:
         # Intercept
         self.b = np.sum(self.y_sv) - np.sum(self.lambda_star * self.y_sv * K_sv)
         self.b /= len(self.lambda_star)
-
-        # if self.kernel == "Linear":
-        #     self.w = np.zeros(D)
-        #     for n in range(len(self.lambda_star)):
-        #         self.w += self.lambda_star[n] * self.y_sv[n] * self.X_sv[n]
-        #     print("W:",self.w)
         return
 
     def predict(self, X):
